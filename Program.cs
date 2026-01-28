@@ -1,2 +1,10 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿int health = 100;
+
+void TakeDamage(int damage)
+{
+    int health = 50;
+    health -= damage;
+}
+
+TakeDamage(5);
+Console.WriteLine($"Health after taking damage: {health}");
